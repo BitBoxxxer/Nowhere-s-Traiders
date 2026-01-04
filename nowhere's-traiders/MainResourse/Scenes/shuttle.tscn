@@ -21,7 +21,7 @@ shape = SubResource("BoxShape3D_qkuwt")
 mesh = SubResource("BoxMesh_205hh")
 
 [node name="Player" parent="." instance=ExtResource("1_205hh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9829674, 1.2249861, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9829674, 1.1182468, 0)
 
 [node name="cube" type="StaticBody3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, 5, 0, 0, 0, 10, -6.0281034, 2.7820358, 5.808198)
@@ -30,6 +30,7 @@ transform = Transform3D(10, 0, 0, 0, 5, 0, 0, 0, 10, -6.0281034, 2.7820358, 5.80
 shape = SubResource("BoxShape3D_qkuwt")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="cube"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0007240176, -0.004746437, -0.00011014938)
 mesh = SubResource("BoxMesh_205hh")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

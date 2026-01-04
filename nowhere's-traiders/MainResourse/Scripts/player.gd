@@ -6,13 +6,6 @@ var JUMP_VELOCITY = 4.5
 
 
 func _physics_process(delta: float) -> void:
-	$CanvasLayer/BoxContainer/IntearctEText.hide()
-	if $head/Camera3D/SeeCast.is_colliding():
-		var target = $head/Camera3D/SeeCast.get_collider()
-		if target.has_method("interact"):
-			$CanvasLayer/BoxContainer/IntearctEText.show()
-			print("U can pickup this item.")
-	
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
